@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header role="banner">
+        <nav role="navigation" aria-label="Main Navigation">
+            <ul>
+                <li><a href="#about-me" tabindex="0">About Me</a></li>
+                <li><a href="#projects" tabindex="0">Projects</a></li>
+                <li><a href="#skills" tabindex="0">Skills</a></li>
+                <li><a href="#contact" tabindex="0">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main">
+        <section id="about-me" tabindex="-1" aria-labelledby="about-me-heading">
+            <h2 id="about-me-heading">About Me</h2>
+            <p>
+                I am a passionate web developer with experience in building responsive and accessible websites. I enjoy solving problems and learning new technologies.
+            </p>
+        </section>
+
+        <section id="projects" tabindex="-1" aria-labelledby="projects-heading">
+            <h2 id="projects-heading">Projects</h2>
+            <p>Here are some of my recent projects showcasing my skills and experience:</p>
+            <article aria-labelledby="portfolio-title">
+                <figure>
+                    <img src="project1.png" alt="Screenshot of Project 1" width="200">
+                    <figcaption>Project 1</figcaption>
+                </figure>
+                <h3 id="portfolio-title">Portfolio Website</h3>
+                <p>A personal portfolio website to showcase my work and skills. Built with HTML, CSS, and JavaScript.</p>
+            </article>
+            <article aria-labelledby="task-manager-title">
+                <figure>
+                    <img src="project2.png" alt="Screenshot of Project 2" width="200">
+                    <figcaption>Project 2</figcaption>
+                </figure>
+                <h3 id="task-manager-title">Task Manager App</h3>
+                <p>A simple task management application with user authentication and CRUD functionality.</p>
+            </article>
+        </section>
+
+        <section id="skills" tabindex="-1" aria-labelledby="skills-heading">
+            <h2 id="skills-heading">Skills</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript (ES6+)</li>
+                <li>React.js</li>
+                <li>Node.js</li>
+                <li>Git & GitHub</li>
+                <li>Responsive Design</li>
+                <li>REST APIs</li>
+            </ul>
+        </section>
+
+        <section id="contact" tabindex="-1" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact</h2>
+            <form aria-label="Contact Form">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required tabindex="0">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required tabindex="0">
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required tabindex="0"></textarea>
+                </div>
+                <button type="submit" tabindex="0" aria-label="Send Message">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
